@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_one/main.dart';
+import 'package:flutter_one/login.dart';
 
 class Splash extends StatefulWidget {
   const Splash({Key? key}) : super(key: key);
@@ -34,10 +34,10 @@ class _SplashState extends State<Splash> with SingleTickerProviderStateMixin {
   }
 
   void _navigateToHome() async {
-    await Future.delayed(const Duration(milliseconds: 1500));
+    await Future.delayed(const Duration(milliseconds: 3500));
     Navigator.pushReplacement(
       context,
-      MaterialPageRoute(builder: (context) => Root()),
+      MaterialPageRoute(builder: (context) => LoginPage()),
     );
   }
 
@@ -59,7 +59,7 @@ class _SplashState extends State<Splash> with SingleTickerProviderStateMixin {
               scale: _animation,
               child: const Text(
                 "Healthier You",
-                style: TextStyle(fontSize: 18),
+                style: TextStyle(fontSize: 18,fontFamily:'FontMain'),
               ),
             ),
           ],

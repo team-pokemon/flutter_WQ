@@ -53,7 +53,7 @@ class _LearnFlutterState extends State<LearnFlutter> {
               width: double.infinity,
               child: const Center(
                 child: Text(
-                  'Hello world',
+                  'Upload',
                   style: TextStyle(color: Colors.white),
                 ),
               ),
@@ -62,23 +62,10 @@ class _LearnFlutterState extends State<LearnFlutter> {
               onPressed: () {
                 debugPrint('Elevated button');
               },
-              child: const Text('Click'),
+              child: const Text('Upload when verified'),
             ),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                primary: isSwitch ? Colors.green : Colors.black,
-              ),
-              onPressed: () {
-                debugPrint('Elevated button');
-              },
-              child: const Text('Click'),
-            ),
-            TextButton(
-              onPressed: () {
-                debugPrint('Elevated button');
-              },
-              child: const Text('Click'),
-            ),
+            
+            
             GestureDetector(
               behavior: HitTestBehavior.opaque,
               onTap: () {
@@ -91,7 +78,7 @@ class _LearnFlutterState extends State<LearnFlutter> {
                     Icons.local_fire_department,
                     color: Colors.blueAccent,
                   ),
-                  Text('Hello'),
+                  Text('Results found after as follows: '),
                   Icon(
                     Icons.local_fire_department,
                     color: Colors.blueAccent,

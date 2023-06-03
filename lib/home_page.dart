@@ -41,7 +41,7 @@ class SearchBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final TextEditingController _textEditingController =
-        TextEditingController(text: "Search");
+        TextEditingController();
 
     return CupertinoSearchTextField(
       controller: _textEditingController,
@@ -71,7 +71,7 @@ class CardView extends StatelessWidget {
             leading: Container(
               width: 60,
               height: 60,
-              child: Image.asset('images/sci.png'),
+              child: Image.asset('images/Lake.jpg'),
             ),
             title: Text(
               'Condition',

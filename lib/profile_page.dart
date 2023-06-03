@@ -47,6 +47,7 @@ class _MyAppState extends State<ProfilePage> {
             target: LatLng(0, 0),
             zoom: 0,
           ),
+          mapType: MapType.satellite,
         ),
       ),
     );
